@@ -5,7 +5,7 @@ $connect = new PDO('mysql:host=localhost;dbname=praktika', 'root', '');
 $query = "
 SELECT * FROM comment 
 WHERE Parent_Comment_ID = '0' 
-ORDER BY Comment_ID ASC
+ORDER BY Comment_ID DESC
 ";
 
 $statement = $connect->prepare($query);
